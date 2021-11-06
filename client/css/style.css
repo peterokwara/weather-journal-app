@@ -41,6 +41,11 @@ body {
 }
 
 /* Theme rules */
+body {
+  background-color: #fefbff;
+  font-family: "Roboto", sans-serif;
+}
+
 .headline {
   font-size: 6em;
 }
@@ -56,9 +61,63 @@ label {
 #zip,
 #feelings,
 #generate {
-  font-size: 2em;
+  font-size: 3em;
+}
+
+#date,
+#temp,
+#content {
+  font-size: 3em;
 }
 
 .body {
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: Roboto;
+}
+
+button {
+  background-color: #3a5ba9;
+  padding: 20px 40px;
+  border-radius: 30px;
+  color: white;
+}
+
+textarea,
+input {
+  background-color: #e2e2ec;
+}
+
+#entryHolder {
+  border-style: solid;
+  border-color: #3a5ba9;
+  border-radius: 8px;
+  padding: 30px;
+}
+
+/* Module rules */
+.headline,
+.zip,
+.feel,
+.entry {
+  margin: 10px;
+}
+
+.zip > label {
+  margin: 30px;
+}
+
+.feel > button {
+  margin-top: 40px;
+}
+
+.feel > label {
+  margin: 30px;
+}
+
+.feel > textarea {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.entry > div {
+  margin: 20px;
 }
