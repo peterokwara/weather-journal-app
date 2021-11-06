@@ -36,6 +36,8 @@ app.get("/all", (request, response) => {
 });
 
 // Add data to the project object for post route
-app.post("/add", () => {
-  data.push(projectData);
+app.post("/add", (request, response) => {
+  projectData["temperature"] = request.body.temperature;
+  projectData["date"] = request.body.date;
+  projectData["userResponse"] = request.body.userResponse;
 });
