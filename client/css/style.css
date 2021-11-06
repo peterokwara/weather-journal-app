@@ -70,6 +70,41 @@ label {
   font-size: 3em;
 }
 
+/* ipad */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .headline {
+    font-size: 3em;
+  }
+
+  label {
+    font-size: 1.2em;
+  }
+
+  .title {
+    font-size: 1.2em;
+  }
+
+  #zip,
+  #feelings,
+  #generate {
+    font-size: 1.2em;
+  }
+
+  #date,
+  #temp,
+  #content {
+    font-size: 1.2em;
+  }
+
+  .feel > textarea {
+    font-size: 1.2em;
+  }
+}
+
+.title {
+  align-content: center;
+}
+
 .body {
   font-family: Roboto;
 }
@@ -79,6 +114,15 @@ button {
   padding: 20px 40px;
   border-radius: 30px;
   color: white;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  button {
+    background-color: #3a5ba9;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: white;
+  }
 }
 
 textarea,
@@ -120,4 +164,34 @@ input {
 
 .entry > div {
   margin: 20px;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .headline,
+  .zip,
+  .feel,
+  .entry {
+    margin: 8px;
+  }
+
+  .zip > label {
+    margin: 10px;
+  }
+
+  .feel > button {
+    margin-top: 10px;
+  }
+
+  .feel > label {
+    margin: 10px;
+  }
+
+  .feel > textarea {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .entry > div {
+    margin: 10px;
+  }
 }
