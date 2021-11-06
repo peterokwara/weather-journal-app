@@ -3,7 +3,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  height: 100%;
+  height: calc(100%);
   width: 100%;
 }
 
@@ -101,6 +101,36 @@ label {
   }
 }
 
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+  .headline {
+    font-size: 4em;
+  }
+
+  label {
+    font-size: 1.8em;
+  }
+
+  .title {
+    font-size: 1.8em;
+  }
+
+  #zip,
+  #feelings,
+  #generate {
+    font-size: 1.8em;
+  }
+
+  #date,
+  #temp,
+  #content {
+    font-size: 1.8em;
+  }
+
+  .feel > textarea {
+    font-size: 1.8em;
+  }
+}
+
 .title {
   align-content: center;
 }
@@ -166,6 +196,7 @@ input {
   margin: 20px;
 }
 
+/* large screen size */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
   .headline,
   .zip,
@@ -193,5 +224,36 @@ input {
 
   .entry > div {
     margin: 10px;
+  }
+}
+
+/* Retina screen */
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+  .headline,
+  .zip,
+  .feel,
+  .entry {
+    margin: 3px;
+  }
+
+  .zip > label {
+    margin: 10px;
+  }
+
+  .feel > button {
+    margin-top: 10px;
+  }
+
+  .feel > label {
+    margin: 10px;
+  }
+
+  .feel > textarea {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .entry > div {
+    margin: 4px;
   }
 }
