@@ -1,0 +1,64 @@
+/* Base rules */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+/* Layout rules */
+.holder {
+  display: flex;
+}
+
+.headline {
+  align-items: center;
+  justify-content: center;
+}
+
+.zip {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.feel {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.entry {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+body {
+  display: grid;
+  align-content: center;
+}
+
+/* Theme rules */
+.headline {
+  font-size: 6em;
+}
+
+label {
+  font-size: 3em;
+}
+
+.title {
+  font-size: 3em;
+}
+
+#zip,
+#feelings,
+#generate {
+  font-size: 2em;
+}
+
+.body {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
