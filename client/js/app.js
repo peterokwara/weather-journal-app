@@ -40,6 +40,11 @@ const getWeatherData = async () => {
   // Get the zip code value from the text field
   const zipCode = document.getElementById("zip").value;
 
+  if (!zipCode) {
+    alert("Zip code must be filled out");
+    throw new Error("Zip value is missing. Please enter a zip value");
+  }
+
   // Get the feelings value from the text field
   const userResponse = document.getElementById("feelings").value;
 
@@ -109,7 +114,10 @@ const updateUI = async () => {
   }
 };
 
-// Function to get projectData from the backend api
+/**
+ * Function to do fetch project data from the backend api
+ * @returns Project data in the backend api
+ */
 const getProjectData = async () => {
   // Build the url to get the data
   const url = `${apiUrl}/all`;
@@ -129,7 +137,7 @@ const getProjectData = async () => {
  * Function to do fetch request
  * @param url the url to make requests to
  * @param options this may include whether it's get or post, with data or no data
- * @returns
+ * @returns the response from openweatherapi or from the backend
  */
 const postData = async (url = "", options = {}) => {
   const response = await fetch(url, options);
