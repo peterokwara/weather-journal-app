@@ -18,25 +18,23 @@ To install all the dependencies
 
 ## Run
 
-Ensure you have a `config.local.json` file populated in the `data/config.local.json` with the following information
-
-```console
-{
-    "port": "3000"
-}
-```
-
-The api key for `openweatherapi` also needs to be put in the `client/js/app.js` file here
+The api key for `openweatherapi` needs to be put in the `client/js/app.js` file here
 
 ```js
 // The api key for openWeather
 const apiKey = "";
 ```
 
-Once the installation process is complete, to run the project, you can run:
+Once the installation process has been done, to run the project, you can run:
 
-```bash
+```console
 npm run start
+```
+
+To run on developer mode, you can simply run:
+
+```console
+npm run start-dev
 ```
 
 ## Contributing
