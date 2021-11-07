@@ -40,6 +40,7 @@ const getWeatherData = async () => {
   // Get the zip code value from the text field
   const zipCode = document.getElementById("zip").value;
 
+  // Simple input validation
   if (!zipCode) {
     alert("Zip code must be filled out");
     throw new Error("Zip value is missing. Please enter a zip value");
