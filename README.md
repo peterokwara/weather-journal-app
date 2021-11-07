@@ -18,7 +18,7 @@ To install all the dependencies
 
 ## Run
 
-The api key for `openweatherapi` needs to be put in the `client/js/app.js` file here
+The api key for `openweatherapi` https://openweathermap.org/ needs to be put in the `client/js/app.js` file here
 
 ```js
 // The api key for openWeather
@@ -36,6 +36,8 @@ To run on developer mode, you can simply run:
 ```console
 npm run start-dev
 ```
+
+Once the project is running, the website can be accessed from `localhost:3000` by default. 
 
 ## Contributing
 
